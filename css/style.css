@@ -228,12 +228,78 @@ svg * {
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: "Inter", sans-serif;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1680px;
+  min-height: 91px;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+
+.header__logo {
+  font-weight: 700;
+  font-size: 24px;
+  color: #0f172a;
+}
+
+.header__menu-list {
+  display: flex;
+  column-gap: 32px;
+}
+
+.header__menu-link {
+  text-decoration: none;
   font-weight: 400;
   font-size: 16px;
   color: #64748b;
-  background-color: #fff;
+  transition-duration: 0.2s;
+
+  &:hover {
+    color: #0f172a;
+  }
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.header__search {
+  display: flex;
+  padding-inline: 0;
+  color: #0f172a;
+  background-color: transparent;
+  border: none;
+  transition-duration: 0.2s;
+
+  &:hover {
+    color: #64748b;
+  }
+}
+
+.header__button {
+  padding: 16px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  background-color: #0f172a;
+  border: 1px solid #0f172a;
+  border-radius: 16px;
+  transition-duration: 0.2s;
+
+  &:hover {
+    color: #0f172a;
+    background-color: transparent;
+  }
+
+  &:active {
+    scale: 0.97;
+  }
 }
